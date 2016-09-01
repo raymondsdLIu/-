@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LJEssenceViewController.h
 //  BaiSiFunny
 //
 //  Created by raymond on 16/9/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LJEssenceViewController : UIViewController
 
 @end
-
