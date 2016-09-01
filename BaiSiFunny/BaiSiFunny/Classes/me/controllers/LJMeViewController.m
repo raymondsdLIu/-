@@ -18,6 +18,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"我的";
+
+    UIBarButtonItem *nightItem = [UIBarButtonItem
+        barButtonItemWithImage:[UIImage imageNamed:@"mine-moon-icon"]
+              highlightedImage:[UIImage imageNamed:@"mine-moon-icon-click"]
+                        target:self
+                        action:nil];
+    UIBarButtonItem *settingItem = [UIBarButtonItem
+        barButtonItemWithImage:[UIImage imageNamed:@"mine-setting-icon"]
+              highlightedImage:[UIImage imageNamed:@"mine-setting-icon-click"]
+                        target:self
+                        action:nil];
+    self.navigationItem.rightBarButtonItems = @[ settingItem, nightItem ];
 }
 
 - (void)didReceiveMemoryWarning {

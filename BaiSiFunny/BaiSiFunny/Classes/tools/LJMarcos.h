@@ -9,6 +9,12 @@
 #ifndef LJMarcos_h
 #define LJMarcos_h
 
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
 #define RamdonColor                                                            \
   [UIColor colorWithRed:arc4random_uniform(256) / 255.0                        \
                   green:arc4random_uniform(256) / 255.0                        \

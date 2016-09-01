@@ -10,4 +10,6 @@
 
 @interface UIBarButtonItem (Extends)
 
++ (instancetype)barButtonItemWithImage:(UIImage *)image highlightedImage:(UIImage *)highlightedImage target:(id)target action:(SEL)selector;
+
 @end
