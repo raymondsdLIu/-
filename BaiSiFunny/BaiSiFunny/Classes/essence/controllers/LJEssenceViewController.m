@@ -34,7 +34,7 @@
 #pragma mark - private
 
 - (void)leftNavgationItemAction {
-    NSLog(@"sdff");
+    [self.navigationController pushViewController:[[LJTestViewController alloc] init] animated:YES];
 }
 
 @end

@@ -13,6 +13,7 @@
 #import "LJFriendTrendsViewController.h"
 #import "LJMeViewController.h"
 #import "LJTabBar.h"
+#import "LJMainNavigationController.h"
 
 @interface LJMainTabBarController ()
 
@@ -75,8 +76,8 @@
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = image;
     vc.tabBarItem.selectedImage = selectedImage;
-    vc.view.backgroundColor = RamdonColor;
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+//    vc.view.backgroundColor = RamdonColor;
+    UINavigationController *nav = [[LJMainNavigationController alloc] initWithRootViewController:vc];
     [self addChildViewController:nav];
 }
 

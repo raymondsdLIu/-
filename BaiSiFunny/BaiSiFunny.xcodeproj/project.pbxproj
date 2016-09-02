@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4D0D03481D77F5E4009712F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D03471D77F5E4009712F2 /* main.m */; };
-		4D0D034B1D77F5E4009712F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D034A1D77F5E4009712F2 /* AppDelegate.m */; };
 		4D0D03531D77F5E4009712F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0D03521D77F5E4009712F2 /* Assets.xcassets */; };
 		4D0D03611D77F5E6009712F2 /* BaiSiFunnyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D03601D77F5E6009712F2 /* BaiSiFunnyTests.m */; };
 		4D0D036C1D77F5E6009712F2 /* BaiSiFunnyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D036B1D77F5E6009712F2 /* BaiSiFunnyUITests.m */; };
@@ -18,8 +17,11 @@
 		4D0D03A51D781487009712F2 /* LJNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D03A41D781487009712F2 /* LJNewViewController.m */; };
 		4D0D03AC1D781D59009712F2 /* LJMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D03A91D781D59009712F2 /* LJMainTabBarController.m */; };
 		4D0D03AF1D781DC3009712F2 /* LJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D03AE1D781DC3009712F2 /* LJTabBar.m */; };
-		4D0D03B31D782123009712F2 /* UIView+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D03B21D782123009712F2 /* UIView+Extends.m */; };
-		4D0D03B91D78307D009712F2 /* UIBarButtonItem+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D03B81D78307D009712F2 /* UIBarButtonItem+Extends.m */; };
+		4DC8062B1D7915EE006EB105 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC806251D7915EE006EB105 /* AppDelegate.m */; };
+		4DC8062C1D7915EE006EB105 /* UIBarButtonItem+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC806281D7915EE006EB105 /* UIBarButtonItem+Extends.m */; };
+		4DC8062D1D7915EE006EB105 /* UIView+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8062A1D7915EE006EB105 /* UIView+Extends.m */; };
+		4DC806301D791F10006EB105 /* LJMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8062F1D791F10006EB105 /* LJMainNavigationController.m */; };
+		4DC806331D792635006EB105 /* LJTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC806321D792635006EB105 /* LJTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +44,6 @@
 /* Begin PBXFileReference section */
 		4D0D03431D77F5E4009712F2 /* BaiSiFunny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiSiFunny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0D03471D77F5E4009712F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4D0D03491D77F5E4009712F2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4D0D034A1D77F5E4009712F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4D0D03521D77F5E4009712F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D0D03571D77F5E4009712F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D0D035C1D77F5E6009712F2 /* BaiSiFunnyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaiSiFunnyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,11 +65,17 @@
 		4D0D03A91D781D59009712F2 /* LJMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMainTabBarController.m; sourceTree = "<group>"; };
 		4D0D03AD1D781DC3009712F2 /* LJTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTabBar.h; sourceTree = "<group>"; };
 		4D0D03AE1D781DC3009712F2 /* LJTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTabBar.m; sourceTree = "<group>"; };
-		4D0D03B11D782123009712F2 /* UIView+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extends.h"; sourceTree = "<group>"; };
-		4D0D03B21D782123009712F2 /* UIView+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extends.m"; sourceTree = "<group>"; };
 		4D0D03B41D782145009712F2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		4D0D03B71D78307D009712F2 /* UIBarButtonItem+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extends.h"; sourceTree = "<group>"; };
-		4D0D03B81D78307D009712F2 /* UIBarButtonItem+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extends.m"; sourceTree = "<group>"; };
+		4DC806241D7915EE006EB105 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4DC806251D7915EE006EB105 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4DC806271D7915EE006EB105 /* UIBarButtonItem+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extends.h"; sourceTree = "<group>"; };
+		4DC806281D7915EE006EB105 /* UIBarButtonItem+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extends.m"; sourceTree = "<group>"; };
+		4DC806291D7915EE006EB105 /* UIView+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extends.h"; sourceTree = "<group>"; };
+		4DC8062A1D7915EE006EB105 /* UIView+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extends.m"; sourceTree = "<group>"; };
+		4DC8062E1D791F10006EB105 /* LJMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJMainNavigationController.h; sourceTree = "<group>"; };
+		4DC8062F1D791F10006EB105 /* LJMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJMainNavigationController.m; sourceTree = "<group>"; };
+		4DC806311D792635006EB105 /* LJTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJTestViewController.h; sourceTree = "<group>"; };
+		4DC806321D792635006EB105 /* LJTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +126,6 @@
 		4D0D03451D77F5E4009712F2 /* BaiSiFunny */ = {
 			isa = PBXGroup;
 			children = (
-				4D0D03491D77F5E4009712F2 /* AppDelegate.h */,
-				4D0D034A1D77F5E4009712F2 /* AppDelegate.m */,
 				4D0D03791D77FF1B009712F2 /* Classes */,
 				4D0D03521D77F5E4009712F2 /* Assets.xcassets */,
 				4D0D03571D77F5E4009712F2 /* Info.plist */,
@@ -159,12 +163,11 @@
 		4D0D03791D77FF1B009712F2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4D0D03B01D7820D7009712F2 /* category */,
+				4DC806231D7915EE006EB105 /* others */,
 				4D0D038A1D7813C9009712F2 /* essence */,
 				4D0D038E1D7813C9009712F2 /* friendTrends */,
 				4D0D03921D7813C9009712F2 /* me */,
 				4D0D03961D7813C9009712F2 /* new */,
-				4D0D03841D78116E009712F2 /* tools */,
 				4D0D037A1D77FF50009712F2 /* main */,
 			);
 			path = Classes;
@@ -326,6 +329,8 @@
 			children = (
 				4D0D03A81D781D59009712F2 /* LJMainTabBarController.h */,
 				4D0D03A91D781D59009712F2 /* LJMainTabBarController.m */,
+				4DC8062E1D791F10006EB105 /* LJMainNavigationController.h */,
+				4DC8062F1D791F10006EB105 /* LJMainNavigationController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -346,13 +351,26 @@
 			path = views;
 			sourceTree = "<group>";
 		};
-		4D0D03B01D7820D7009712F2 /* category */ = {
+		4DC806231D7915EE006EB105 /* others */ = {
 			isa = PBXGroup;
 			children = (
-				4D0D03B11D782123009712F2 /* UIView+Extends.h */,
-				4D0D03B21D782123009712F2 /* UIView+Extends.m */,
-				4D0D03B71D78307D009712F2 /* UIBarButtonItem+Extends.h */,
-				4D0D03B81D78307D009712F2 /* UIBarButtonItem+Extends.m */,
+				4D0D03841D78116E009712F2 /* tools */,
+				4DC806261D7915EE006EB105 /* category */,
+				4DC806241D7915EE006EB105 /* AppDelegate.h */,
+				4DC806251D7915EE006EB105 /* AppDelegate.m */,
+				4DC806311D792635006EB105 /* LJTestViewController.h */,
+				4DC806321D792635006EB105 /* LJTestViewController.m */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		4DC806261D7915EE006EB105 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				4DC806271D7915EE006EB105 /* UIBarButtonItem+Extends.h */,
+				4DC806281D7915EE006EB105 /* UIBarButtonItem+Extends.m */,
+				4DC806291D7915EE006EB105 /* UIView+Extends.h */,
+				4DC8062A1D7915EE006EB105 /* UIView+Extends.m */,
 			);
 			path = category;
 			sourceTree = "<group>";
@@ -486,15 +504,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D0D034B1D77F5E4009712F2 /* AppDelegate.m in Sources */,
+				4DC8062D1D7915EE006EB105 /* UIView+Extends.m in Sources */,
 				4D0D03A21D781477009712F2 /* LJMeViewController.m in Sources */,
 				4D0D03481D77F5E4009712F2 /* main.m in Sources */,
 				4D0D039F1D781450009712F2 /* LJFriendTrendsViewController.m in Sources */,
+				4DC8062C1D7915EE006EB105 /* UIBarButtonItem+Extends.m in Sources */,
+				4DC806301D791F10006EB105 /* LJMainNavigationController.m in Sources */,
 				4D0D03AC1D781D59009712F2 /* LJMainTabBarController.m in Sources */,
-				4D0D03B31D782123009712F2 /* UIView+Extends.m in Sources */,
+				4DC8062B1D7915EE006EB105 /* AppDelegate.m in Sources */,
 				4D0D039C1D78142C009712F2 /* LJEssenceViewController.m in Sources */,
 				4D0D03A51D781487009712F2 /* LJNewViewController.m in Sources */,
-				4D0D03B91D78307D009712F2 /* UIBarButtonItem+Extends.m in Sources */,
+				4DC806331D792635006EB105 /* LJTestViewController.m in Sources */,
 				4D0D03AF1D781DC3009712F2 /* LJTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,7 +636,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiSiFunny/Classes/tools/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiSiFunny/Classes/others/tools/PrefixHeader.pch";
 				INFOPLIST_FILE = BaiSiFunny/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -630,7 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiSiFunny/Classes/tools/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaiSiFunny/Classes/others/tools/PrefixHeader.pch";
 				INFOPLIST_FILE = BaiSiFunny/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -706,6 +726,7 @@
 				4D0D03721D77F5E6009712F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D0D03731D77F5E6009712F2 /* Build configuration list for PBXNativeTarget "BaiSiFunnyTests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +735,7 @@
 				4D0D03751D77F5E6009712F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D0D03761D77F5E6009712F2 /* Build configuration list for PBXNativeTarget "BaiSiFunnyUITests" */ = {
 			isa = XCConfigurationList;
@@ -722,6 +744,7 @@
 				4D0D03781D77F5E6009712F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
