@@ -21,12 +21,8 @@
 
 @implementation LJMainTabBarController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
++ (void)initialize {
     UITabBarItem *item = [UITabBarItem appearance];
-
-    [self setValue:[[LJTabBar alloc] init] forKeyPath:@"tabBar"];
-
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
     attrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
     attrs[NSForegroundColorAttributeName] = [UIColor grayColor];
@@ -37,6 +33,12 @@
 
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    [self setValue:[[LJTabBar alloc] init] forKeyPath:@"tabBar"];
 
     [self setupChildenViewController:[[LJEssenceViewController alloc] init]
                                title:@"精华"

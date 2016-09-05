@@ -14,10 +14,14 @@
 
 @implementation LJMainNavigationController
 
++ (void)initialize {
+    UINavigationBar *navBar = [UINavigationBar appearanceWhenContainedIn:[self class], nil];
+    [navBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 }
 
 - (void)didReceiveMemoryWarning {

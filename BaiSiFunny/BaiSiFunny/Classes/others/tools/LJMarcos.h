@@ -20,5 +20,12 @@
                   green:arc4random_uniform(256) / 255.0                        \
                    blue:arc4random_uniform(256) / 255.0                        \
                   alpha:1.0];
+#define LJColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define LJGlobalColor LJColor(233, 233, 233)
+
+#define sLJNetWorkTools [LJNetworkTools sharedInstance]
+
+#define CategoryCellReuseId @"CategoryCellReuseId"
+#define UserCellReuseId @"UserCellReuseId"
 
 #endif /* LJMarcos_h */

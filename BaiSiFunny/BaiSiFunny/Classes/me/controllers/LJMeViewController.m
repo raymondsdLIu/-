@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.title = @"我的";
+    self.navigationItem.title = @"我的";
 
     UIBarButtonItem *nightItem = [UIBarButtonItem
         barButtonItemWithImage:[UIImage imageNamed:@"mine-moon-icon"]

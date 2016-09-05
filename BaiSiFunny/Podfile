@@ -1,0 +1,7 @@
+platform :'ios', '8.0'
+target 'BaiSiFunny' do
+pod "AFNetworking"
+pod "SDWebImage"
+pod "SVProgressHUD"
+pod "MJExtension"
+end
